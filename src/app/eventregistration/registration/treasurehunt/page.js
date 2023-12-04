@@ -102,8 +102,8 @@ const Page = () => {
 	const rules = [
 		"1. Each team should consist of 1to 4 members, with a recommended minimum of 3 for faster completion of the challenge.The challenge comprises 5 rounds, during which teams receive clues to decode, leading them to the location for the next clue.",
 		"2. Teams have a total of 25 minutes, with 5 minutes allocated to each round. Time management within rounds is at the discretion of the teams, but the entire hunt must be completed within the specified time frame.Admins will monitor teams closely. Cheating leads to disqualification.",
-		"3.The use of mobile phones a n d other electronic devices is strictly prohibited.Winning depends on completing the quest in the allotted time. The fastest team will be declared the overall winner.",
-		"4.Basic knowledge related to technology si required, although not all clues will be tech-related.",
+		"3. The use of mobile phones a n d other electronic devices is strictly prohibited.Winning depends on completing the quest in the allotted time. The fastest team will be declared the overall winner.",
+		"4. Basic knowledge related to technology si required, although not all clues will be tech-related.",
 		"5. Drawing inspiration from the movie 'Student of the Year,' particularly the last scene, the challenge si designed to evoke a similar competitive spirit and excitement.",
 	];
 
@@ -246,7 +246,7 @@ const Page = () => {
 							</button>
 						)}
 						<h1 className="text-red-600">
-							* TREASURE HUNT: <hr /> (100/- for 3 participants)
+							* TREASURE HUNT: <hr /> (170/- for 3 participants)
 							(200/- for 4 participants)
 						</h1>
 						<div className="mb-4 mt-4">

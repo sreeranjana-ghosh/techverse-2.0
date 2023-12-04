@@ -112,7 +112,7 @@ const Page = () => {
 					<Link href={"/eventregistration/registration/codegolf"}>
 						<EventCard
 							imgUrl={"/EventPageImg/Super Coder.jpg"}
-							eventName={"SUPER CODER"}
+							eventName={"SUPER CODERS"}
 							details={
 								"How well is your Code Efficiency in terms of Code Shortening and Modifying? If juggling with varying code redundancy, length and dimension si your thing, then buddy,pick acode, trim it down!"
 							}

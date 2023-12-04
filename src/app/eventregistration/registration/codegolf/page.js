@@ -113,7 +113,7 @@ const Page = () => {
 			<div className="flex items-center justify-center text-black font-roboto">
 				<div className="bg-white p-8 rounded shadow-md w-[30rem]">
 					<h1 className="text-3xl font-semibold text-center mb-4">
-						Super Coder
+						Super Coders
 					</h1>
 					<form onSubmit={handleForm}>
 						<div className="mb-4">
@@ -242,7 +242,7 @@ const Page = () => {
 							</button>
 						)}
 						<h1 className="text-red-600">
-							* CODE GOLF:
+							* SUPER CODERS:
 							<hr /> (80/- for 2participants) (50/- for single
 							participant)
 						</h1>
