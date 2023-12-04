@@ -38,7 +38,7 @@ function Home() {
 					<div className="w-[20vw] h-full flex items-center justify-end gap-5">
 						<div className="h-full z-10">
 							<Link
-								href="https://drive.google.com/file/d/17BJL9Mk6Wod7_azoomKnZwpCLveD-kdK/view?usp=drivesdk"
+								href="https://drive.google.com/file/d/17RxncdMCbx0GAAX2wTOYsvxhslYyo5YC/view?usp=drivesdk"
 								className={`${styles.brochure}`}
 							>
 								Brochure
