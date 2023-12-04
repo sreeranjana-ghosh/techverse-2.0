@@ -42,7 +42,7 @@ function Footer() {
 					</h1>
 					<div className="h-2/3">
 						<p className="text-xl text-yellow-200">
-							18-19 January, 2024
+							08-09 FEBRUARY, 2024
 						</p>
 						<p>
 							Guru Nanak Institute of Technology 157/F, Nilgunj
