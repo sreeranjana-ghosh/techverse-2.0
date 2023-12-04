@@ -20,7 +20,7 @@ const images = [
     {
         poster: CODERPoster,
         charecter: CODERCharecter,
-        eventName: 'SUPER CODER'
+        eventName: 'SUPER CODERS'
     },
     {
         poster: CHESSPoster,
