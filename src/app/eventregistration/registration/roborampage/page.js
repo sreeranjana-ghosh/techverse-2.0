@@ -90,7 +90,7 @@ const Page = () => {
 
 	const contactDetails = {
 		details:
-			"The ultimate mobile battleground awaits, where players unite, strategize, and engage in epic battles for victory. Join now!",
+			"In a dystopian future, relentless machines clash, sparks flying, in an epic Robo Rampage, where metal titans battle for dominance and survival.",
 		headName: "ABHISHEK VERMA",
 		headPhoneNo: "9073805185",
 		headEmailId: "av279948@gmail.com",
