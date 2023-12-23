@@ -5,17 +5,20 @@ import { EventRegistration } from "@/app/models/participant";
 connectDB();
 
 export async function POST(request) {
-	const { name, email, phone, eventName, imageUrl, participants } =
+	const { name, email, phone, eventName, teamName, imageUrl, participants } =
 		await request.json();
+
 	try {
 		const newRegistration = new EventRegistration({
 			name,
 			email,
 			phone,
+			teamName,
 			eventName,
 			imageUrl: imageUrl,
 			participants,
 		});
+
 		const res = await newRegistration.save();
 		return NextResponse.json({
 			message: "Registration Done.",

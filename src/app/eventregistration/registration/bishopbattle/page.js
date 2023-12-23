@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import Contact from "../../eventDetails/Contact";
+import "../styles.css";
 
 const Page = () => {
 	const router = useRouter();
@@ -96,13 +97,13 @@ const Page = () => {
 		<div className="h-screen w-screen md:h-auto md:flex gap-20 justify-center items-center md:mt-24">
 			<Contact params={contactDetails} rules={rules} imgUrl={"/EventPageImg/Chess.jpeg"}/>
 			<div className="flex items-center justify-center text-black font-roboto">
-				<div className="bg-white p-8 rounded shadow-md w-[30rem]">
-					<h1 className="text-3xl font-semibold text-center mb-4">
+				<div className="form-container p-8 rounded shadow-md w-[30rem]">
+					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						Bishop&apos;s Battle
 					</h1>
 					<form onSubmit={handleForm}>
 						<div className="mb-4">
-							<label className="block text-gray-700">
+							<label className="form-label block">
 								Email:
 							</label>
 							<input
@@ -115,12 +116,12 @@ const Page = () => {
 								value={formData.email}
 								type="email"
 								required={true}
-								className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+								className="form-input w-full rounded p-2"
 							/>
 						</div>
 						<div className="flex gap-2">
 							<div className="mb-4">
-								<label className="block text-gray-700">
+								<label className="form-label block">
 									Name:
 								</label>
 								<input
@@ -133,11 +134,11 @@ const Page = () => {
 									value={formData.name}
 									type="text"
 									required={true}
-									className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+									className="form-input w-full rounded p-2"
 								/>
 							</div>
 							<div className="mb-4">
-								<label className="block text-gray-700">
+								<label className="form-label block">
 									Phone Number:
 								</label>
 								<input
@@ -150,7 +151,7 @@ const Page = () => {
 									value={formData.phone}
 									type="phone"
 									required={true}
-									className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+									className="form-input w-full rounded p-2"
 								/>
 							</div>
 						</div>
@@ -164,10 +165,10 @@ const Page = () => {
 								height={200}
 								alt="qrcode"
 							/>
-							<h1>UPI ID: <span className="text-orange-400">8170842884@paytm</span></h1>
+							<h1 className="text-white">UPI ID: <span className="text-orange-400">8170842884@paytm</span></h1>
 						</div>
 						<div className="mb-4">
-							<label className="block text-gray-700">
+							<label className="form-label block">
 								Payment Photo
 							</label>
 							<input
@@ -178,12 +179,12 @@ const Page = () => {
 								type="file"
 								name="file"
 								required={true}
-								className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+								className="form-input w-full rounded p-2"
 							/>
 						</div>
 						<button
 							type="submit"
-							className="w-full bg-blue-500 text-black font-bold rounded py-2 hover:bg-blue-600 focus:outline-none"
+							className="button w-full font-bold rounded py-2"
 						>
 							{isLoading ? "Submitting..." : "Submit"}
 						</button>

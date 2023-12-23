@@ -3,6 +3,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./styles.css"
 
 const Contact = ({ params, rules,imgUrl }) => {
 	const sliderSettings = {
@@ -17,7 +18,7 @@ const Contact = ({ params, rules,imgUrl }) => {
 	};
 	return (
 		<div className="mb-5 md:mb-0 mt-24 md:mt-0 p-2 md:p-0 text-white">
-			<section className="relative border border-white p-4 shadow-2xl mb-5 rounded-lg">
+			<section className="container-border relative p-4 shadow-2xl mb-5 rounded-lg">
 				<div className="absolute inset-0 bg-blur rounded-lg"></div>
 				<div className="md:w-[35rem] font-roboto">
 					<h1 className="text-center text-3xl font-roboto font-bold underline underline-offset-4">
@@ -37,7 +38,7 @@ const Contact = ({ params, rules,imgUrl }) => {
 					</div>
 				</div>
 			</section>
-			<section className="relative border border-white p-4 shadow-2xl rounded-lg mb-5">
+			<section className="container-border relative p-4 shadow-2xl rounded-lg mb-5">
 				<div className="absolute inset-0 bg-blur rounded-lg"></div>
 				<div className="relative md:w-[35rem] font-roboto">
 					<h1 className="text-center text-3xl font-roboto font-bold underline underline-offset-8">
@@ -67,7 +68,7 @@ const Contact = ({ params, rules,imgUrl }) => {
 					</Slider>
 				</div>
 			</section>
-			<section className="relative border border-white p-4 shadow-2xl mb-5 rounded-lg">
+			<section className="container-border relative p-4 shadow-2xl mb-5 rounded-lg">
 				<div className="absolute inset-0 bg-blur rounded-lg"></div>
 				<div className="relative md:w-[35rem] font-roboto">
 					<h1 className="text-center text-3xl font-roboto font-bold underline underline-offset-4">

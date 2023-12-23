@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import Contact from "../../eventDetails/Contact";
+import "../styles.css";
 
 const Page = () => {
 	const router = useRouter();
@@ -14,6 +15,7 @@ const Page = () => {
 		name: "",
 		email: "",
 		phone: "",
+		teamName: "",
 		imageUrl: "",
 		eventName: "E-Football",
 		participants: [],
@@ -104,22 +106,24 @@ const Page = () => {
 		"3. If anyone issues lag or network issues during the match and gets disconnected then a rematch with remaining time would be arranged keeping the previous score in record.In case of tie between two teams GD will be considered.",
 		"4. The registration fee is non-refundable. Custom formation (convert from PC) is not allowed. No online participation is allowed.",
 		"5. Dream Team &Username should not be changed till the tournament ends and every participant should use the same model team (Dream Team) &username as they've filled during registration.",
-		"6. Tournament type: 3v3 (+1 sub).Late entries would not be entertained."
-	]
+		"6. Tournament type: 3v3 (+1 sub).Late entries would not be entertained.",
+	];
 
 	return (
 		<div className="h-screen w-screen md:h-auto md:flex gap-20 justify-center items-center md:mt-24">
-			<Contact params={contactDetails} rules={rules} imgUrl={"/EventPageImg/E football.jpeg"} />
-			<div className="flex items-center justify-center text-black font-roboto">
-				<div className="bg-white p-8 rounded shadow-md w-[30rem]">
-					<h1 className="text-3xl font-semibold text-center mb-4">
+			<Contact
+				params={contactDetails}
+				rules={rules}
+				imgUrl={"/EventPageImg/E football.jpeg"}
+			/>
+			<div className="flex items-center justify-center font-roboto">
+				<div className="form-container p-8 rounded shadow-md w-[30rem]">
+					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						E-Football
 					</h1>
 					<form onSubmit={handleForm}>
 						<div className="mb-4">
-							<label className="block text-gray-700">
-								Email:
-							</label>
+							<label className="form-label block">Email:</label>
 							<input
 								onChange={(event) => {
 									setFormData({
@@ -130,12 +134,29 @@ const Page = () => {
 								value={formData.email}
 								type="email"
 								required={true}
-								className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+								className="form-input w-full rounded p-2"
+							/>
+						</div>
+						<div className="mb-4">
+							<label className="form-label block">
+								Team Name:
+							</label>
+							<input
+								onChange={(event) => {
+									setFormData({
+										...formData,
+										teamName: event.target.value,
+									});
+								}}
+								value={formData.teamName}
+								type="text"
+								required={true}
+								className="form-input w-full rounded p-2"
 							/>
 						</div>
 						<div className="flex gap-2">
 							<div className="mb-4">
-								<label className="block text-gray-700">
+								<label className="form-label block">
 									Name:
 								</label>
 								<input
@@ -148,11 +169,11 @@ const Page = () => {
 									value={formData.name}
 									type="text"
 									required={true}
-									className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+									className="form-input w-full rounded p-2"
 								/>
 							</div>
 							<div className="mb-4">
-								<label className="block text-gray-700">
+								<label className="form-label block">
 									Phone Number:
 								</label>
 								<input
@@ -165,7 +186,7 @@ const Page = () => {
 									value={formData.phone}
 									type="phone"
 									required={true}
-									className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+									className="form-input w-full rounded p-2"
 								/>
 							</div>
 						</div>
@@ -195,7 +216,7 @@ const Page = () => {
 													),
 											})
 										}
-										className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+										className="form-input w-full rounded p-2"
 									/>
 									<input
 										type="email"
@@ -220,13 +241,13 @@ const Page = () => {
 													),
 											})
 										}
-										className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+										className="form-input w-full rounded p-2"
 									/>
 								</div>
 								<button
 									type="button"
 									onClick={() => removeParticipant(index)}
-									className="mt-2 mb-5 w-60 bg-red-500 text-white rounded py-2 hover:bg-red-600 focus:outline-none"
+									className="button-red mt-2 mb-5 w-60 rounded py-2 "
 								>
 									Remove
 								</button>
@@ -236,7 +257,7 @@ const Page = () => {
 							<button
 								type="button"
 								onClick={addParticipant}
-								className=" mb-10 w-60 bg-green-500 text-white rounded py-2 hover:bg-green-600 focus:outline-none"
+								className="button-green mb-10 w-60 rounded py-2 "
 							>
 								Add Participant
 							</button>
@@ -251,7 +272,7 @@ const Page = () => {
 								height={200}
 								alt="qrcode"
 							/>
-							<h1>
+							<h1 className="text-white">
 								UPI ID:{" "}
 								<span className="text-orange-400">
 									8170842884@paytm
@@ -259,7 +280,7 @@ const Page = () => {
 							</h1>
 						</div>
 						<div className="mb-4">
-							<label className="block text-gray-700">
+							<label className="form-label block">
 								Payment Photo
 							</label>
 							<input
@@ -270,12 +291,12 @@ const Page = () => {
 								type="file"
 								name="file"
 								required={true}
-								className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+								className="form-input w-full rounded p-2"
 							/>
 						</div>
 						<button
 							type="submit"
-							className="w-full bg-blue-500 text-black font-bold rounded py-2 hover:bg-blue-600 focus:outline-none"
+							className="button w-full font-bold rounded py-2"
 						>
 							{isLoading ? "Submitting..." : "Submit"}
 						</button>

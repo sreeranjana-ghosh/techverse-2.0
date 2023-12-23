@@ -13,6 +13,9 @@ const eventRegistrationSchema = new mongoose.Schema({
 		type: Number,
 		required: true,
 	},
+	teamName: {
+		type: String,
+	},
 	eventName: {
 		type: String,
 		required: true,
@@ -21,9 +24,9 @@ const eventRegistrationSchema = new mongoose.Schema({
 		type: Date,
 		default: Date.now(),
 	},
-	imageUrl:{
-		type:String,
-		required:true
+	imageUrl: {
+		type: String,
+		required: true,
 	},
 	participants: [
 		{

@@ -5,6 +5,7 @@ import { toast } from "react-toastify";
 import { useRouter } from "next/navigation";
 import axios from "axios";
 import Contact from "../../eventDetails/Contact";
+import "../styles.css";
 
 const Page = () => {
 	const router = useRouter();
@@ -82,11 +83,11 @@ const Page = () => {
 	};
 
 	const rules = [
-		"There will be two rounds: The first one is the knockout round. In the knockout round, it will be a MCQ test roun comprising of questions from markup languages like html, css, web designing basics from javascript (vanilla and popular frameworks like angular), some server side popular languages like PHP, NodelS and database basics questions SOL/NoSOL.All the teams qualifying for the final round will have to design a web-application as specified on spot.",
+		"There will be two rounds: The first one is the knockout round. In the knockout round, it will be a MCQ test roun comprising of questions from markup languages like html, css, web designing basics from javascript (vanilla and popular frameworks like angular), some server side popular languages like PHP, NodejS and database basics questions SOL/NoSOL.All the teams qualifying for the final round will have to design a web-application as specified on spot.",
 		{
 			title: "(1st round):",
 			description:
-				"Teams can have a maximum of 2 members. Inter-college teams as well as single participants can also apply. 3. Al the members of the team should be students studying in a College/School and should carry their institutional id cards.Registration will be done on the website and on the registration desk before the event.",
+				"Teams can have a maximum of 2 members. Inter-college teams as well as single participants can also apply. Al the members of the team should be students studying in a College/School and should carry their institutional id cards.Registration will be done on the website and on the registration desk before the event.",
 		},
 		{
 			title: "(2nd round):",
@@ -102,14 +103,14 @@ const Page = () => {
 				rules={rules}
 				imgUrl={"/EventPageImg/web development.jpeg"}
 			/>
-			<div className="flex items-center justify-center text-black font-roboto">
-				<div className="bg-white p-8 rounded shadow-md w-[30rem]">
-					<h1 className="text-3xl font-semibold text-center mb-4">
+			<div className="flex items-center justify-center font-roboto">
+				<div className="form-container p-8 rounded shadow-md w-[30rem]">
+					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						Web Development
 					</h1>
 					<form onSubmit={handleForm}>
 						<div className="mb-4">
-							<label className="block text-gray-700">
+							<label className="form-label block">
 								Email:
 							</label>
 							<input
@@ -122,12 +123,12 @@ const Page = () => {
 								value={formData.email}
 								type="email"
 								required={true}
-								className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+								className="form-input w-full rounded p-2"
 							/>
 						</div>
 						<div className="flex gap-2">
 							<div className="mb-4">
-								<label className="block text-gray-700">
+								<label className="form-label block">
 									Name:
 								</label>
 								<input
@@ -140,11 +141,11 @@ const Page = () => {
 									value={formData.name}
 									type="text"
 									required={true}
-									className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+									className="form-input w-full rounded p-2"
 								/>
 							</div>
 							<div className="mb-4">
-								<label className="block text-gray-700">
+								<label className="form-label block">
 									Phone Number:
 								</label>
 								<input
@@ -157,7 +158,7 @@ const Page = () => {
 									value={formData.phone}
 									type="phone"
 									required={true}
-									className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+									className="form-input w-full rounded p-2"
 								/>
 							</div>
 						</div>
@@ -179,7 +180,7 @@ const Page = () => {
 							</h1>
 						</div>
 						<div className="mb-4">
-							<label className="block text-gray-700">
+							<label className="form-label block">
 								Payment Photo
 							</label>
 							<input
@@ -190,12 +191,12 @@ const Page = () => {
 								type="file"
 								name="file"
 								required={true}
-								className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+								className="form-input w-full rounded p-2"
 							/>
 						</div>
 						<button
 							type="submit"
-							className="w-full bg-blue-500 text-black font-bold rounded py-2 hover:bg-blue-600 focus:outline-none"
+							className="button w-full font-bold rounded py-2"
 						>
 							{isLoading ? "Submitting..." : "Submit"}
 						</button>

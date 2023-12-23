@@ -5,6 +5,7 @@ import Image from "next/image";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 import Contact from "../../eventDetails/Contact";
+import "../styles.css";
 
 const Page = () => {
 	const router = useRouter();
@@ -81,9 +82,9 @@ const Page = () => {
 	};
 
 	const rules = [
-		"1. It si a live contest (mode-offline). Participants wil compete in person, at the campus.Participants should submit their hand craft two days before the event physically.",
-		"2. Each participant can submit maximum of two works. Participants must elaborate on their work in front of the judges (3 minutes will be given to each participant to describe). There will be a question-answering session too.",
-		"3. Your work must be your original concept and not a copy of anyone else and it should not be the work which you have already presented in the previous year.",
+		"1.It si a live contest (mode-offline). Participants wil compete in person, at the campus.Participants should submit their hand craft two days before the event physically.",
+		"2.Each participant can submit maximum of two works. Participants must elaborate on their work in front of the judges (3 minutes will be given to each participant to describe). There will be a question-answering session too.",
+		"3.Your work must be your original concept and not a copy of anyone else and it should not be the work which you have already presented in the previous year.",
 	];
 
 	return (
@@ -94,15 +95,13 @@ const Page = () => {
 				imgUrl={"/EventPageImg/Super Coder.jpg"}
 			/>
 			<div className="flex items-center justify-center text-black font-roboto">
-				<div className="bg-white p-8 rounded shadow-md w-[30rem]">
-					<h1 className="text-3xl font-semibold text-center mb-4">
+				<div className="form-container p-8 rounded-xl shadow-md w-[30rem]">
+					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						Craftopia
 					</h1>
 					<form onSubmit={handleForm}>
 						<div className="mb-4">
-							<label className="block text-gray-700">
-								Email:
-							</label>
+							<label className="form-label block">Email:</label>
 							<input
 								onChange={(event) => {
 									setFormData({
@@ -113,12 +112,12 @@ const Page = () => {
 								value={formData.email}
 								type="email"
 								required={true}
-								className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+								className="form-input w-full rounded-xl p-2"
 							/>
 						</div>
 						<div className="flex gap-2">
 							<div className="mb-4">
-								<label className="block text-gray-700">
+								<label className="form-label block">
 									Name:
 								</label>
 								<input
@@ -131,11 +130,11 @@ const Page = () => {
 									value={formData.name}
 									type="text"
 									required={true}
-									className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+									className="form-input w-full rounded-xl p-2"
 								/>
 							</div>
 							<div className="mb-4">
-								<label className="block text-gray-700">
+								<label className="form-label block">
 									Phone Number:
 								</label>
 								<input
@@ -148,7 +147,7 @@ const Page = () => {
 									value={formData.phone}
 									type="phone"
 									required={true}
-									className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+									className="form-input w-full rounded-xl p-2"
 								/>
 							</div>
 						</div>
@@ -162,7 +161,7 @@ const Page = () => {
 								height={200}
 								alt="qrcode"
 							/>
-							<h1>
+							<h1 className="text-white">
 								UPI ID:{" "}
 								<span className="text-orange-400">
 									8170842884@paytm
@@ -170,7 +169,7 @@ const Page = () => {
 							</h1>
 						</div>
 						<div className="mb-4">
-							<label className="block text-gray-700">
+							<label className="form-label block">
 								Payment Photo
 							</label>
 							<input
@@ -181,12 +180,12 @@ const Page = () => {
 								type="file"
 								name="file"
 								required={true}
-								className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+								className="form-input w-full rounded-xl p-2"
 							/>
 						</div>
 						<button
 							type="submit"
-							className="w-full bg-blue-500 text-white rounded py-2 hover:bg-blue-600 focus:outline-none"
+							className="button w-full rounded-xl py-2"
 						>
 							Submit
 						</button>

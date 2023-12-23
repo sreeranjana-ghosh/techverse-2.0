@@ -16,7 +16,6 @@ const EventTicket = ({ params }) => {
 					userData.date = new Date(userData.date);
 				}
 				setData(userData);
-				console.log(userData);
 			} catch (error) {
 				console.error("Error fetching user data:", error);
 			}
