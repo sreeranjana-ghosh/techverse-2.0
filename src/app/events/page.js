@@ -8,7 +8,7 @@ const Page = () => {
 		<>
 			<div className="h-auto w-screen">
 				<div className="flex justify-center items-center mt-28">
-					<h1 className="text-white text-3xl font-roboto font-bold md:text-9xl">
+					<h1 className="text-white text-3xl font-young font-bold md:text-9xl">
 						EVENTS
 					</h1>
 				</div>

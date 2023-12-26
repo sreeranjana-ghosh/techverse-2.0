@@ -1,77 +1,64 @@
-import React from "react";
+"use client";
+import React, { useEffect } from "react";
 import Image from "next/image";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./style.css";
 
 const Sponsor = () => {
-	const sliderSettings = {
-		dots: true,
-		infinite: true,
-		speed: 1000,
-		slidesToShow: 1,
-		slidesToScroll: 1,
-		arrows: false,
-		autoplay: true,
-		autoplaySpeed: 2000,
-		fade:true
-		
-	};
+	useEffect(() => {
+		const scrollers = document.querySelectorAll(".scroller");
+
+		if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+			addAnimation();
+		}
+
+		function addAnimation() {
+			scrollers.forEach((scroller) => {
+				scroller.setAttribute("data-animated", true);
+				const scrollerInner =
+					scroller.querySelector(".scroller__inner");
+				const scrollerContent = Array.from(scrollerInner.children);
+				scrollerContent.forEach((item) => {
+					const duplicatedItem = item.cloneNode(true);
+					duplicatedItem.setAttribute("aria-hidden", true);
+					scrollerInner.appendChild(duplicatedItem);
+				});
+			});
+		}
+	}, []);
+
 	return (
-		<div className="w-screen flex flex-col justify-center items-center ">
+		<div className="w-screen flex flex-col justify-center items-center gap-[5vw]">
 			<h1 className="text-4xl md:text-7xl font-roboto font-extrabold text-white">
 				OUR SPONSORS
 			</h1>
-			<Slider {...sliderSettings} className="w-40 md:w-96 h-96 p-4 mt-20">
-			<div className="relative w-60 h-28 md:w-40 md:h-40">
-						<Image src="/sponsers/GNIT.png" alt="logo" fill />
+			<div class="scroller" data-direction="right" data-speed="slow">
+				<div class="scroller__inner">
+					<div className="relative">
+						<Image src="/sponsers/GNIT.png" alt="" fill />
 					</div>
-					<div className="relative w-96 h-28 md:w-40 md:h-40">
-						<Image src="/sponsers/JIS.png" alt="logo" fill />
+					<div className="relative">
+						<Image src="/sponsers/JIS.png" alt="" fill />
 					</div>
-					<div className="relative w-96 h-16 md:w-60 md:h-28">
-						<Image src="/sponsers/council.png" alt="logo" fill />
+					<div className="relative">
+						<Image src="/sponsers/council.png" alt="" fill />
 					</div>
-					<div className="relative w-96 h-10 md:w-80 md:h-20">
+					<div className="relative">
 						<Image
 							src="/sponsers/teenageresports.png"
-							alt="logo"
+							alt=""
 							fill
 						/>
 					</div>
-					<div className="relative w-96 h-10 md:w-56 md:h-20">
-						<Image src="/sponsers/edugraph.jpg" alt="logo" fill />
+					<div className="relative">
+						<Image src="/sponsers/edugraph.jpg" alt="" fill />
 					</div>
-					<div className="relative w-96 h-16 md:w-52 md:h-32">
-						<Image src="/sponsers/techghosh.png" alt="logo" fill />
-					</div>
-			</Slider>
-			{/* <marquee>
-				<div className="w-[200vw] md:w-screen relative flex justify-center items-center gap-14 mt-20">
-					<div className="relative w-60 h-28 md:w-40 md:h-40">
-						<Image src="/sponsers/GNIT.png" alt="logo" fill />
-					</div>
-					<div className="relative w-96 h-20 md:w-40 md:h-40">
-						<Image src="/sponsers/JIS.png" alt="logo" fill />
-					</div>
-					<div className="relative w-96 h-16 md:w-60 md:h-28">
-						<Image src="/sponsers/council.png" alt="logo" fill />
-					</div>
-					<div className="relative w-96 h-10 md:w-80 md:h-20">
-						<Image
-							src="/sponsers/teenageresports.png"
-							alt="logo"
-							fill
-						/>
-					</div>
-					<div className="relative w-96 h-10 md:w-56 md:h-20">
-						<Image src="/sponsers/edugraph.jpg" alt="logo" fill />
-					</div>
-					<div className="relative w-96 h-16 md:w-52 md:h-32">
-						<Image src="/sponsers/techghosh.png" alt="logo" fill />
+					<div className="relative">
+						<Image src="/sponsers/techghosh.png" alt="" fill />
 					</div>
 				</div>
-			</marquee> */}
+			</div>
 		</div>
 	);
 };

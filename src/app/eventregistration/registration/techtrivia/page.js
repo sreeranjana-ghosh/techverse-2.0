@@ -276,7 +276,8 @@ const Page = () => {
 							</button>
 						)}
 						<h1 className="text-red-600">
-							* TECH TRIVIA: 100/-(Maximum participants- 4)
+							* TECH TRIVIA: For 1 Person 50/-,<br />For 2 Person 80/-,<br />For 3 Person 100/-
+							<br />(Maximum participants- 3)
 						</h1>
 						<div className="mb-4 mt-4">
 							<Image

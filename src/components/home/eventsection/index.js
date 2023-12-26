@@ -15,19 +15,11 @@ const HorizontalScroll = () => {
 	const [isMobile, setIsMobile] = useState(false);
 
 	useEffect(() => {
-		(async () => {
-			const LocomotiveScroll = (await import("locomotive-scroll"))
-				.default;
-			const locomotiveScroll = new LocomotiveScroll();
-		})();
-	}, []);
-
-	useEffect(() => {
-		const isMobile = window.innerWidth <= 768;
-		if (isMobile) {
+		const mobile = window.innerWidth <= 768;
+		if (mobile) {
 			setIsMobile(true);
 		}
-		if (!isMobile) {
+		else{
 			const pin = gsap.fromTo(
 				sectionRef.current,
 				{
@@ -60,7 +52,7 @@ const HorizontalScroll = () => {
 					className="scroll-section-inner md:h-screen h-auto w-screen md:w-[800vw] md:flex"
 				>
 					<div className="scroll-section md:h-screen w-screen flex justify-center items-center">
-						<h1 className="text-4xl mb-20 md:mb-0 md:text-9xl font-lora font-extrabold text-white">
+						<h1 className="text-4xl mb-20 md:mb-0 md:text-9xl font-young font-extrabold text-white">
 							EVENTS
 						</h1>
 					</div>

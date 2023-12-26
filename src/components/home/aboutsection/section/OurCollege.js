@@ -375,7 +375,7 @@ const RightSide = () => {
 				/>
 			</div>
 			<div className=" w-full mt-20 flex justify-center items-center">
-				<NavigateButton props="Learn More"/>
+				<NavigateButton props="Learn More" />
 			</div>
 		</>
 	);
