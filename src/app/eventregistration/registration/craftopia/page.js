@@ -10,6 +10,7 @@ import "../styles.css";
 const Page = () => {
 	const router = useRouter();
 	const [file, setFile] = useState(null);
+	const [isLoading, setIsLoading] = useState(false);
 	const [formData, setFormData] = useState({
 		name: "",
 		email: "",
@@ -185,9 +186,9 @@ const Page = () => {
 						</div>
 						<button
 							type="submit"
-							className="button w-full rounded-xl py-2"
+							className="button w-full font-bold rounded py-2"
 						>
-							Submit
+							{isLoading ? "Submitting..." : "Submit"}
 						</button>
 					</form>
 				</div>
