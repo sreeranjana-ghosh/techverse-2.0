@@ -83,9 +83,10 @@ const Page = () => {
 	};
 
 	const rules = [
-		"1.It si a live contest (mode-offline). Participants wil compete in person, at the campus.Participants should submit their hand craft two days before the event physically.",
+		"1.It si a live contest (mode-offline). Participants wil compete in person, at the campus. Participants should submit their hand craft & Painting two days before the event physically.",
 		"2.Each participant can submit maximum of two works. Participants must elaborate on their work in front of the judges (3 minutes will be given to each participant to describe). There will be a question-answering session too.",
 		"3.Your work must be your original concept and not a copy of anyone else and it should not be the work which you have already presented in the previous year.",
+		"4.Two winners will be selected, one from handcrafts and another from paintings."
 	];
 
 	return (
