@@ -17,7 +17,7 @@ const Page = () => {
 		phone: "",
 		teamName: "",
 		imageUrl: "",
-		eventName: "Code Golf",
+		eventName: "Super Coders",
 		participants: [],
 	});
 
