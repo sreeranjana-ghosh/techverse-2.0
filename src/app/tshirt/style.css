@@ -1,0 +1,65 @@
+.form-container {
+	border: 1px solid #7042f88b;
+	box-shadow: 0 0 5px #7042f88b, 0 0 5px #7042f88b inset;
+	backdrop-filter: blur(1px);
+}
+.form-label {
+	color: #fff;
+}
+
+.form-input {
+	color: #fff;
+	border-radius: 0.5rem;
+	background-color: black;
+	border: 1px solid #7042f88b;
+	box-shadow: 0 0 5px #7042f88b, 0 0 5px #7042f88b inset;
+}
+
+.form-input:focus {
+	border-color: #7042f88b;
+}
+
+.button {
+	font-size: large;
+	color: #fff;
+	border: 1px solid #7042f88b;
+	box-shadow: 0 0 5px #7042f88b, 0 0 5px #7042f88b inset;
+}
+.button:before {
+	height: 0%;
+	width: 2px;
+}
+.button:hover {
+	box-shadow: inset 0 0 10px #7042f88b, 0 0 50px #7042f88b inset,
+		0 0 20px #7042f88b inset;
+}
+
+.button-green {
+	font-size: large;
+	color: #fff;
+	border: 1px solid rgb(34 197 94);
+	box-shadow: 0 0 5px rgb(34 197 94), 0 0 5px rgb(34 197 94) inset;
+}
+.button-green:before {
+	height: 0%;
+	width: 2px;
+}
+.button-green:hover {
+	box-shadow: inset 0 0 10px rgb(34 197 94), 0 0 50px rgb(34 197 94) inset,
+		0 0 40px rgb(34 197 94) inset;
+}
+
+.button-red {
+	font-size: large;
+	color: #fff;
+	border: 1px solid rgb(239 68 68);
+	box-shadow: 0 0 5px rgb(239 68 68), 0 0 5px rgb(239 68 68) inset;
+}
+.button-red:before {
+	height: 0%;
+	width: 2px;
+}
+.button-red:hover {
+	box-shadow: inset 0 0 10px rgb(239 68 68), 0 0 50px rgb(239 68 68) inset,
+		0 0 40px rgb(239 68 68) inset;
+}

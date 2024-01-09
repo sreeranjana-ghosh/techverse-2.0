@@ -17,7 +17,25 @@ const Page = () => {
 		phone: "",
 		imageUrl: "",
 		eventName: "Web Development",
+		participants: [],
 	});
+
+	const addParticipant = () => {
+		setFormData({
+			...formData,
+			participants: [...formData.participants, { name: "", email: "" }],
+		});
+	};
+
+	const removeParticipant = (index) => {
+		const updatedParticipants = [...formData.participants];
+		updatedParticipants.splice(index, 1);
+
+		setFormData({
+			...formData,
+			participants: updatedParticipants,
+		});
+	};
 
 	const handleForm = async (event) => {
 		event.preventDefault();
@@ -162,6 +180,78 @@ const Page = () => {
 								/>
 							</div>
 						</div>
+						{formData.participants.map((participant, index) => (
+							<div key={index}>
+								<div className="flex gap-1">
+									<input
+										type="text"
+										placeholder={`Participant ${
+											index + 1
+										} Name`}
+										value={participant.name}
+										onChange={(e) =>
+											setFormData({
+												...formData,
+												participants:
+													formData.participants.map(
+														(p, i) =>
+															i === index
+																? {
+																		...p,
+																		name: e
+																			.target
+																			.value,
+																  }
+																: p
+													),
+											})
+										}
+										className="form-input w-full rounded p-2"
+									/>
+									<input
+										type="email"
+										placeholder={`Participant ${
+											index + 1
+										} Email`}
+										value={participant.email}
+										onChange={(e) =>
+											setFormData({
+												...formData,
+												participants:
+													formData.participants.map(
+														(p, i) =>
+															i === index
+																? {
+																		...p,
+																		email: e
+																			.target
+																			.value,
+																  }
+																: p
+													),
+											})
+										}
+										className="form-input w-full rounded p-2"
+									/>
+								</div>
+								<button
+									type="button"
+									onClick={() => removeParticipant(index)}
+									className="button-red mt-2 mb-5 w-60 rounded py-2"
+								>
+									Remove
+								</button>
+							</div>
+						))}
+						{formData.participants.length < 1 && (
+							<button
+								type="button"
+								onClick={addParticipant}
+								className="button-green mb-10 w-60 rounded py-2"
+							>
+								Add Participant
+							</button>
+						)}
 						<h1 className="text-red-600">
 							* WEB DEVELOPMENT: 50/-(Per head)
 						</h1>
