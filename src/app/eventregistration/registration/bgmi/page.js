@@ -121,7 +121,7 @@ const Page = () => {
 			<Contact params={contactDetails} rules={rules} imgUrl={"/EventPageImg/Bgmi.jpeg"} />
 			<div className="flex items-center justify-center text-black font-roboto">
 				<div className="form-container p-8 rounded shadow-md w-[30rem]">
-					<h1 className=" text-black text-3xl font-semibold text-center mb-4">
+					<h1 className=" text-white text-3xl font-semibold text-center mb-4">
 						BGMI
 					</h1>
 					<form onSubmit={handleForm}>

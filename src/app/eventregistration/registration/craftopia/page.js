@@ -94,7 +94,7 @@ const Page = () => {
 			<Contact
 				params={contactDetails}
 				rules={rules}
-				imgUrl={"/EventPageImg/Super Coder.jpg"}
+				imgUrl={"/EventPageImg/craftopia.jpg"}
 			/>
 			<div className="flex items-center justify-center text-black font-roboto">
 				<div className="form-container p-8 rounded-xl shadow-md w-[30rem]">

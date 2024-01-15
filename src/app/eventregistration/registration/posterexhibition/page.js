@@ -252,7 +252,7 @@ const Page = () => {
 								</button>
 							</div>
 						))}
-						{formData.participants.length < 3 && (
+						{formData.participants.length < 2 && (
 							<button
 								type="button"
 								onClick={addParticipant}

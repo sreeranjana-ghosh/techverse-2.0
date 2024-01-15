@@ -10,7 +10,7 @@ import EventSection from "@/components/home/eventsection";
 import AboutFooter from "@/components/aboutpage/aboutfooter/index";
 import Sponsers from "@/components/home/sponsor/Sponsor";
 import Footer from "@/components/common/footer/Footer";
-
+import Tshirt from "@/components/home/merchendise/index";
 
 export default function Home() {
 	const [isLoading, setIsLoading] = useState(true);
@@ -35,9 +35,10 @@ export default function Home() {
 					<AboutSection />
 					<EventSection />
 					<Gallery />
-					<Sponsers/>
+					<Tshirt />
+					<Sponsers />
 					<AboutFooter />
-					<Footer/>
+					<Footer />
 				</div>
 			</main>
 		</>
