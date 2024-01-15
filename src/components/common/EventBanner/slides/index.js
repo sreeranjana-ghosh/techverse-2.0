@@ -60,7 +60,7 @@ function index({
 					</div>
 					<div className="h-full w-full flex flex-col justify-center items-center">
 						<h1 className="text-white md:text-4xl text-3xl font-extrabold">
-							Spacial Offer
+							Special Offer
 						</h1>
 						<div className="text-[#FFE500] md:text-3xl text-2xl mt-5">
 							{event3 ? (
