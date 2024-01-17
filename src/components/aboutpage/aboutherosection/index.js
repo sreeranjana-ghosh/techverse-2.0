@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import React, { useEffect, useState } from "react";
 import "./style.css";
 import { motion } from "framer-motion";
@@ -7,7 +7,7 @@ import { useInView } from "react-intersection-observer";
 const phrase =
 	"Techvesre is tech fiesta, organized by Computer Science Department of Guru Nanak Institute of Technology, Kolkata. It is a platform for students to showcase their technical and creative skills, participate in competitions.";
 
-function index() {
+function Index() {
 	const [isMobile, setIsMobile] = useState(false);
 	useEffect(() => {
 		const size = window.innerWidth <= 768;
@@ -31,7 +31,7 @@ function index() {
 	);
 }
 
-export default index;
+export default Index;
 
 export function MaskText() {
 	const animation = {

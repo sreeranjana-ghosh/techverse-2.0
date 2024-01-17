@@ -15,7 +15,7 @@ const Earth = dynamic(() => import("@/components/home/countdown/earth/index"), {
 	),
 });
 
-function index() {
+function Index() {
 	const [isMobile, setIsMobile] = useState(false);
 	useEffect(() => {
 		const size = window.innerWidth <= 768;
@@ -31,4 +31,4 @@ function index() {
 	);
 }
 
-export default index;
+export default Index;

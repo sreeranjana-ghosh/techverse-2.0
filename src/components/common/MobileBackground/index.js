@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react';
 import './style.css';
 import StarsCanvas from '../starbackground/StarBackground';
 
-function index() {
+function Index() {
   const [isMobile, setIsMobile] = useState(false);
   useEffect(() => {
     const size = window.innerWidth <= 768;
@@ -12,4 +12,4 @@ function index() {
   return isMobile ? <div className="mobile-container" /> : <StarsCanvas />;
 }
 
-export default index;
+export default Index;
