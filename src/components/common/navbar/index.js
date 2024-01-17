@@ -32,6 +32,7 @@ function Home() {
 								className="object-cover w-full"
 								src={logo}
 								alt="logo"
+								loading="lazy"
 							/>
 						</Link>
 					</div>

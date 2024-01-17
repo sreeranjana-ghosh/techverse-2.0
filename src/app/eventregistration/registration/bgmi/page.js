@@ -276,6 +276,7 @@ const Page = () => {
 								width={200}
 								height={200}
 								alt="qrcode"
+								loading="lazy"
 							/>
 							<h1 className="text-white">UPI ID: <span className="text-orange-400">8170842884@paytm</span></h1>
 						</div>

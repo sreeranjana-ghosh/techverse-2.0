@@ -16,6 +16,7 @@ const EventCard = ({ imgUrl, eventName, details }) => {
 									height={900}
 									className="rounded-lg"
 									alt="EventImage"
+									loading="lazy"
 								/>
 								<div className={styles.overlayText}>
 									<h1 className="text-2xl font-lora font-extrabold text-white">

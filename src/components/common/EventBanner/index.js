@@ -40,7 +40,9 @@ export default function Slider() {
 						event2={"Super Coders"}
 						fees1={"80"}
 						fees2={"100"}
-            pageLink={"/eventregistration/specialOffer/webdev-supercoder"}
+						pageLink={
+							"/eventregistration/specialOffer/webdev-supercoder"
+						}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
@@ -51,7 +53,9 @@ export default function Slider() {
 						event1={"Freeze The Frame"}
 						event2={"Poster Exhibition"}
 						fees1={"120"}
-            pageLink={"/eventregistration/specialOffer/poster-photography"}
+						pageLink={
+							"/eventregistration/specialOffer/poster-photography"
+						}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
@@ -62,7 +66,9 @@ export default function Slider() {
 						event1={"Craftopia"}
 						event2={"Freeze The Frame"}
 						fees1={"80"}
-            pageLink={"/eventregistration/specialOffer/craftopia-photography"}
+						pageLink={
+							"/eventregistration/specialOffer/craftopia-photography"
+						}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
@@ -73,7 +79,9 @@ export default function Slider() {
 						event1={"Craftopia"}
 						event2={"Poster Exhibition"}
 						fees1={"120"}
-            pageLink={"/eventregistration/specialOffer/poster-craftopia"}
+						pageLink={
+							"/eventregistration/specialOffer/poster-craftopia"
+						}
 					/>
 				</SwiperSlide>
 				<SwiperSlide>
@@ -86,7 +94,9 @@ export default function Slider() {
 						event2={"Poster Exhibition"}
 						event3={"Freeze The Frame"}
 						fees1={"150"}
-            pageLink={"/eventregistration/specialOffer/poster-craftopia-photography"}
+						pageLink={
+							"/eventregistration/specialOffer/poster-craftopia-photography"
+						}
 					/>
 				</SwiperSlide>
 				<div className="autoplay-progress" slot="container-end">

@@ -31,6 +31,7 @@ const Contact = ({ params, rules,imgUrl }) => {
 							height={200}
 							className="rounded-md border border-white"
 							alt="Event Image"
+							loading="lazy"
 						/>
 						<h1 className="text-center md:text-left flex justify-center items-center">
 							{params.details}

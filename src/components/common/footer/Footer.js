@@ -18,6 +18,7 @@ function Footer() {
 								alt="logo"
 								fill
 								className="object-cover w-full h-full"
+								loading="lazy"
 							/>
 						</Link>
 					</div>

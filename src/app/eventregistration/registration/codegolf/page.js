@@ -280,6 +280,7 @@ const Page = () => {
 								width={200}
 								height={200}
 								alt="qrcode"
+								loading="lazy"
 							/>
 							<h1 className="text-white">
 								UPI ID:{" "}
@@ -300,7 +301,7 @@ const Page = () => {
 								type="file"
 								name="file"
 								required={true}
-								className="w-full border rounded p-2 focus:outline-none focus:border-blue-500"
+								className="form-input w-full rounded p-2"
 							/>
 						</div>
 						<button
