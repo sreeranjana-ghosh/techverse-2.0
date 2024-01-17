@@ -2,7 +2,7 @@ import "./globals.css";
 import Header from "../components/common/navbar";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import StarsCanvas from "@/components/common/starbackground/StarBackground";
+import MobileBackground from "@/components/common/MobileBackground/index"
 import CustomCursor from '@/components/common/customCursor/CustomCursor';
 import SmoothScroll from "@/components/utils/SmoothScroll";
 
@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
 				<SmoothScroll/>
 				<CustomCursor />
 				<ToastContainer />
-				<StarsCanvas />
+				<MobileBackground/>
 				<Header />
 				{children}
 			</body>
