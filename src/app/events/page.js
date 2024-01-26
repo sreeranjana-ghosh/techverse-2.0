@@ -132,6 +132,7 @@ const Page = () => {
               details={
                 "Welcome, adventurers! Embark on a thrilling journey, solve clues, and unveil secrets in our exciting treasure hunt. Let's begin the quest!"
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/webdevelopment'}>
