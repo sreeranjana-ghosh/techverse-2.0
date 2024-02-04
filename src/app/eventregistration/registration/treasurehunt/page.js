@@ -116,12 +116,12 @@ const Page = () => {
 				rules={rules}
 				imgUrl={"/EventPageImg/treasure hunt.jpg"}
 			/>
-			<div className="flex items-center justify-center font-roboto">
+			{/* <div className="flex items-center justify-center font-roboto">
 				<div className="form-container p-8 rounded shadow-md w-[30rem]">
 					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						Treasure Hunt
 					</h1>
-					{/* <form onSubmit={handleForm}>
+					<form onSubmit={handleForm}>
 						<div className="mb-4">
 							<label className="form-label block">
 								Email:
@@ -304,9 +304,9 @@ const Page = () => {
 						>
 							{isLoading ? "Submitting..." : "Submit"}
 						</button>
-					</form> */}
+					</form>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

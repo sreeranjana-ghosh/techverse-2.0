@@ -60,6 +60,7 @@ const Page = () => {
               details={
                 'Merging the pitch and pixel, this game redefines soccer gaming with realism, community, and esports thrill. Presenting E-FOOTBALL!'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/freezetheframe'}>
