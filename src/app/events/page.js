@@ -33,6 +33,7 @@ const Page = () => {
               details={
                 'The ultimate mobile battleground awaits, where players unite, strategize, and engage in epic battles for victory. Join now!'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/bishopbattle'}>
