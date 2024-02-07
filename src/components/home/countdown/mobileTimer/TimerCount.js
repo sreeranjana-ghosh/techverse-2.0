@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 export default function TimerCount() {
 	const [endTime, setEndTime] = useState(false);
 	useEffect(() => {
-		const targetDate = new Date("2024-02-08T23:59:59").getTime();
+		const targetDate = new Date("2024-02-08T00:00:00").getTime();
 		let previousTimeBetweenDates;
 		setInterval(() => {
 			const currentDate = new Date().getTime();

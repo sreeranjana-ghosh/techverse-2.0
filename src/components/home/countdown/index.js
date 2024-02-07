@@ -6,7 +6,7 @@ import Image from "next/image";
 import Timer from "./timer/Timer";
 import TimerCount from "./mobileTimer/TimerCount";
 
-const targetDate = new Date("2024-02-08T23:59:59").getTime();
+const targetDate = new Date("2024-02-08T00:00:00").getTime();
 
 const Earth = dynamic(() => import("@/components/home/countdown/earth/index"), {
 	ssr: false,
