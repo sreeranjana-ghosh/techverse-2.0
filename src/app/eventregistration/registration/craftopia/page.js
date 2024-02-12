@@ -96,7 +96,7 @@ const Page = () => {
 				rules={rules}
 				imgUrl={"/EventPageImg/craftopia.jpg"}
 			/>
-			<div className="flex items-center justify-center text-black font-roboto">
+			{/* <div className="flex items-center justify-center text-black font-roboto">
 				<div className="form-container p-8 rounded-xl shadow-md w-[30rem]">
 					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						Craftopia
@@ -194,7 +194,7 @@ const Page = () => {
 						</button>
 					</form>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

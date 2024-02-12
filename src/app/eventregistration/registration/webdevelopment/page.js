@@ -121,7 +121,7 @@ const Page = () => {
 				rules={rules}
 				imgUrl={"/EventPageImg/web development.jpeg"}
 			/>
-			<div className="flex items-center justify-center font-roboto">
+			{/* <div className="flex items-center justify-center font-roboto">
 				<div className="form-container p-8 rounded shadow-md w-[30rem]">
 					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						Web Development
@@ -293,7 +293,7 @@ const Page = () => {
 						</button>
 					</form>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

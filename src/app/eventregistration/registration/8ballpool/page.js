@@ -97,7 +97,7 @@ const Page = () => {
 				rules={rules}
 				imgUrl={"/EventPageImg/8ballpool.jpg"}
 			/>
-			<div className="flex items-center justify-center font-roboto">
+			{/* <div className="flex items-center justify-center font-roboto">
 				<div className="form-container p-8 rounded shadow-md w-[30rem]">
 					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						8 Ball Pool
@@ -198,7 +198,7 @@ const Page = () => {
 						</button>
 					</form>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

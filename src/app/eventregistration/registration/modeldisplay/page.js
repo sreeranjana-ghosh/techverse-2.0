@@ -15,7 +15,7 @@ const Page = () => {
 		name: "",
 		email: "",
 		phone: "",
-		teamName:"",
+		teamName: "",
 		imageUrl: "",
 		eventName: "Model Display",
 		participants: [],
@@ -105,12 +105,16 @@ const Page = () => {
 		"2.From each group 2 participants will be allowed to come forward and elaborate on the working and functioning of the model.",
 		"3.The team leader of each group will have to register with proper details and no entries will be entertained without registration.",
 		"4.Judge's Decision will be final decision.",
-	]
+	];
 
 	return (
 		<div className="h-screen w-screen md:h-auto md:flex gap-20 justify-center items-center md:mt-24">
-			<Contact params={contactDetails} rules={rules} imgUrl={"/EventPageImg/model display.jpg"}/>
-			<div className="flex items-center justify-center font-roboto">
+			<Contact
+				params={contactDetails}
+				rules={rules}
+				imgUrl={"/EventPageImg/model display.jpg"}
+			/>
+			{/* <div className="flex items-center justify-center font-roboto">
 				<div className="form-container p-8 rounded shadow-md w-[30rem]">
 					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						Model Display
@@ -300,7 +304,7 @@ const Page = () => {
 						</button>
 					</form>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

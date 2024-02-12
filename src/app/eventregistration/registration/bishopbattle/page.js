@@ -91,12 +91,16 @@ const Page = () => {
 		"6. Please go through rules like en-passant, illegal moves, pawn promotion, 3-fold repetition rule, 50 moves draw rule,'touch-move' and castling.",
 		"7.Players wil be disqualified, fi found cheating.fI participants face any problem, contact the coordinators or volunteers immediately.",
 		"8. In case of dispute, the event head's decision wil be final.",
-	]
+	];
 
 	return (
 		<div className="h-screen w-screen md:h-auto md:flex gap-20 justify-center items-center md:mt-24">
-			<Contact params={contactDetails} rules={rules} imgUrl={"/EventPageImg/Chess.jpeg"}/>
-			<div className="flex items-center justify-center text-black font-roboto">
+			<Contact
+				params={contactDetails}
+				rules={rules}
+				imgUrl={"/EventPageImg/Chess.jpeg"}
+			/>
+			{/* <div className="flex items-center justify-center text-black font-roboto">
 				<div className="form-container p-8 rounded shadow-md w-[30rem]">
 					<h1 className="text-3xl font-semibold text-center mb-4 text-white">
 						Bishop&apos;s Battle
@@ -191,7 +195,7 @@ const Page = () => {
 						</button>
 					</form>
 				</div>
-			</div>
+			</div> */}
 		</div>
 	);
 };

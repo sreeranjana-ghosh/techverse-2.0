@@ -24,6 +24,7 @@ const Page = () => {
               details={
                 'Dive into the virtual realm of cues, balls, and pockets, and discover why millions of players choose 8 Ball Pool for endless fun and competitive challenges.'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/bgmi'}>
@@ -43,6 +44,7 @@ const Page = () => {
               details={
                 'Welcome to the world of chess, a timeless gamewhere strategy, foresight, and skill converge on the 64 squares.'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/craftopia'}>
@@ -52,6 +54,7 @@ const Page = () => {
               details={
                 'The Grand Handcraft Competition Celebrating Artistry, Imagination, and Skill - Unleash Your Creativity and Showcase Your Handmade Masterpieces!'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/efootball'}>
@@ -71,6 +74,7 @@ const Page = () => {
               details={
                 'Get your lenses, cameras and phones out to capture and enhance what we see every day.Thy lens shall be our eyes!'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/ideascape'}>
@@ -80,6 +84,7 @@ const Page = () => {
               details={
                 'Fostering Innovation and Empowering Change: A Comprehensive Guide to Effective Idea Presentation for a Transformative Tomorrow.'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/modeldisplay'}>
@@ -89,6 +94,7 @@ const Page = () => {
               details={
                 "Work on some real-time, innovative, model project ideas, and hang in there until you make the cut. When you display your own model, it'll be like earning a Merit Badge for your efforts!"
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/posterexhibition'}>
@@ -98,6 +104,7 @@ const Page = () => {
               details={
                 "Let your mind wander, yet make a statement. Illustrate your thoughts, caption your voice, embolden your words - and there, you've made a poster.Express yourself, and display it."
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/roborampage'}>
@@ -107,6 +114,7 @@ const Page = () => {
               details={
                 'The ultimate mobile battleground awaits, where players unite, strategize, and engage in epic battles for victory. Join now!'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/codegolf'}>
@@ -116,6 +124,7 @@ const Page = () => {
               details={
                 'How well is your Code Efficiency in terms of Code Shortening and Modifying? If juggling with varying code redundancy, length and dimension si your thing, then buddy,pick acode, trim it down!'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/techtrivia'}>
@@ -125,6 +134,7 @@ const Page = () => {
               details={
                 'Are you the Tech-nerd of your group? Do people mock you for your knowledge on tech stuff? Grab this opportunity to put your knowledge to the test, ace thisTech Quiz and gain admirers!'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
           <Link href={'/eventregistration/registration/treasurehunt'}>
@@ -144,6 +154,7 @@ const Page = () => {
               details={
                 'Showcase your creative talent of website development. Explore your ability to build excellent websites and impress everyone with your developing skills.'
               }
+              closeEvent={"Registration is closed."}
             />
           </Link>
         </div>
