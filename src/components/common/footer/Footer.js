@@ -129,10 +129,10 @@ function Footer() {
 								&
 							</div>
 							<Link
-								href="https://www.facebook.com/profile.php?id=100069326365665"
+								href="https://www.linkedin.com/in/sreeranjana-ghosh-80151831b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app "
 								className="text-blue-500"
 							>
-								Sandip Samanta
+								Sreeranjana Ghosh
 							</Link>
 						</div>
 					</div>
